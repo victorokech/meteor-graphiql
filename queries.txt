@@ -1,0 +1,43 @@
+mutation addTask {
+  addTask(text: "Finish Grubbie User") {
+    _id
+    text
+    createdAt
+    checked
+  }
+}
+
+mutation toggleChecked {
+  toggleChecked(id: "N9MfSNGzxAraTERiy") {
+    _id
+    text
+    createdAt
+    checked
+  }
+}
+
+mutation deleteTask {
+  deleteTask(id: "N9MfSNGzxAraTERiy")
+}
+
+query getOneTask {
+  getOneTask(id: "99JN8DHPXsFWQdTfE") {
+    _id
+    text
+    createdAt
+    checked
+  }
+}
+
+query getAllTasks {
+  getAllTasks {
+    _id
+    text
+    createdAt
+    checked
+  }
+}
+
+query getIncompleteCount {
+  getIncompleteTasksCount
+}
