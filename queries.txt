@@ -46,6 +46,13 @@ query getFortuneCookie {
   getFortuneCookie
 }
 
+query getAllAuthors {
+  getAllAuthors {
+    firstName
+    lastName
+  }
+}
+
 query getAuthor {
   getOneAuthor(firstName: "Maurine") {
     id
@@ -55,12 +62,5 @@ query getAuthor {
       title
       text
     }
-  }
-}
-
-query getAllAuthors {
-  getAllAuthors {
-    firstName
-    lastName
   }
 }
